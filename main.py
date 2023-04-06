@@ -19,10 +19,10 @@ prompt = "The following is a text completion task:\n\n" + file_content
 response = openai.Completion.create(
     engine="gpt-3.5-turbo",
     prompt=prompt,
-    max_tokens=1024,
+    max_tokens=2048,
     n=1,
     stop=None,
-    temperature=0.5,
+    temperature=1.8,
 )
 
 output = response.choices[0].text
